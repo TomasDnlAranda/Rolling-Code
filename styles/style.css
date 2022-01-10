@@ -275,6 +275,176 @@ body {
     width: 90%;
     margin-bottom: 2rem;
 }
+.section-epz {
+    display: flex;
+    flex-direction: column;
+}
+.section-epz__container-text {
+    background: #c10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.section-epz__quotas {
+    background: #c10000;
+    color: white;
+    transform: rotate(45deg);
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    font-size: .8rem;
+    padding: .3rem 0;
+    font-weight: 800;
+}
+
+.section-epz__ui-h5 {
+    text-align: center;
+    border: 0;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    clear: both;
+    box-sizing: border-box;
+    position: relative;
+    transition: .5s;
+    width: 100%;
+    margin: 0;
+    border-color: #fff;
+    font-family: "Integral", Sans-serif;
+    font-weight: 700;
+    color: #C10000;
+    transition-duration: 1000ms;
+    font-size: 11vw;
+    margin-bottom: 49px;
+    --fontSize: 48;
+    line-height: 0.98;
+}
+
+.section-epz__container-quotas {
+    display: flex;
+    justify-content: end;
+}
+
+.section-epz__ui-btn {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fff;
+    background: transparent;
+    border-color: #fff;
+    color: #C10000;
+    background-color: #FFFFFF;
+    border-width: 4px;
+    border-radius: 40px;
+    font-weight: 500;
+    hyphens: manual;
+}
+
+.section-epz__h4 {
+    color: white;
+    hyphens: manual;
+    cursor: default;
+    text-align: center;
+    border: 0;
+    font-style: inherit;
+    outline: 0;
+    vertical-align: baseline;
+    clear: both;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Integral", Sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    font-size: 6.9vw;
+    line-height: 1.92;
+}
+
+.section-epz__container-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-epz__ui {
+    background-image: url('../img/Grupo-116.png');
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section-epz__bk {
+    background-image: url('../img/Grupo-115.png');
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section-epz__bk-h5 {
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    clear: both;
+    box-sizing: border-box;
+    position: relative;
+    transition: .5s;
+    width: 100%;
+    margin: 0;
+    border-color: #fff;
+    font-family: "Integral", Sans-serif;
+    font-weight: 700;
+    color: #666666;
+    transition-duration: 1000ms;
+    font-size: 11vw;
+    margin-bottom: 49px;
+    line-height: 1.2;
+}
+
+.section-epz__bk-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 14rem;
+    width: 60%;
+}
+
+.section-epz__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 11rem;
+    width: 60%;
+}
 
 .coders{
     background-color: #f3f3f3;
@@ -874,6 +1044,28 @@ body {
         display: none;
     }
 
+    .section-epz__container-text {
+        height: 15rem;
+    }
+
+    .section-epz__h4 {
+        font-size: 4rem;
+    }
+
+    .section-epz__container-card {
+        flex-direction: row;
+    }
+
+    .section-epz__ui-h5 {
+        font-size: 2.5rem;
+        margin-top: 7rem;
+    }
+
+    .section-epz__bk-h5 {
+        font-size: 2.5rem;
+        margin-top: 7rem;
+    }
+
     .coders h2{
         font-size: 5rem;
     }
@@ -1185,6 +1377,14 @@ body {
     .img-md{
         max-width: 100%;
         height: auto;
+    }
+
+    .section-epz__ui-h5 {
+        font-size: 4rem;
+    }
+
+    .section-epz__bk-h5 {
+        font-size: 4rem;
     }
     .coders h2{
         font-size: 7rem;
