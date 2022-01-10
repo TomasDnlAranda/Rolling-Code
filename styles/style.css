@@ -391,13 +391,12 @@ body {
     color: white;
     font-family: "Integral", Sans-serif;
     text-transform: uppercase;
-    font-size: 3.5rem !important;
+    font-size: 2rem !important;
     font-weight: 700;
     letter-spacing: -3px;
     align-self: center;
     text-align: center;
     line-height: 1;
-    margin-bottom: 7rem !important;
 }
 
 .time__container{
@@ -425,10 +424,11 @@ body {
     font-family: "Integral", Sans-serif;
     text-align: center;
     margin: 0;
+    font-size: .5rem !important;
 }
 
 .time .n{
-    font-size: 2.2rem !important;
+    font-size: rem !important;
 }
 /*Código agregado por Axel*/
 
@@ -665,18 +665,18 @@ body {
         min-height: 70vh;
     }
     .timer h3{
-        font-size: 3rem;
+        font-size: 3rem!important;
         margin: 3rem 3rem;
         margin-top: 0;
     }
     .time{
         border-radius: 20%;
     }
-    .n{
-        font-size: 1.7rem!important;
+    .time .n{
+        font-size: 1.5rem!important;
     }
     .time p{
-        font-size: 1rem;
+        font-size: 1rem!important;
     }
     /*Código agregado por Axel*/
 
