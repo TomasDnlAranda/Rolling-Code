@@ -494,6 +494,107 @@ body {
     background: rgba(87, 87, 87, 0.445);
 }
 
+.becas, .becas__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.becas__img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.becas__text {
+    font-style: normal;
+    line-height: 1.85714285714286;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: inherit;
+    font-size: 1rem;
+    color: var(--ast-global-color-3);
+    hyphens: manual;
+    box-sizing: border-box;
+    min-height: 1px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-self: inherit;
+    cursor: default;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.becas__text h4 {
+    hyphens: manual;
+    cursor: default;
+    border: 0;
+    font-style: inherit;
+    outline: 0;
+    vertical-align: baseline;
+    clear: both;
+    box-sizing: border-box;
+    padding: 0;
+    color: #C10000;
+    font-family: "Integral", Sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 0.9;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+
+.becas__text p {
+    hyphens: manual;
+    cursor: default;
+    color: #666666;
+    line-height: 28px;
+    border: 0;
+    font-size: 1.2rem;
+    font-style: inherit;
+    font-weight: 300;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.becas__text button {
+    border: none;
+    hyphens: manual;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+    box-shadow: none;
+    font-family: var( --e-global-typography-accent-font-family ), Sans-serif;
+    font-weight: var( --e-global-typography-accent-font-weight );
+    text-decoration: none;
+    background-color: #C10000;
+    border-radius: 50px 50px 50px 50px;
+    margin-bottom: 2rem;
+    margin-top: 3.5rem;
+    margin-left: 3rem !important;
+    width: 17rem;
+}
+
+.becas__container-cards {
+    display: none;
+}
+
 .coders{
     background-color: #f3f3f3;
     padding-bottom: 3rem;
@@ -1252,6 +1353,136 @@ body {
         margin-top: 7rem;
     }
     
+    .becas__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+
+    .becas__text {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-top: 2rem;
+        padding: 0 0;
+        width: 70%;
+        height: 60rem;
+    }
+
+    .becas {
+        margin-bottom: 1rem;
+        height: 60rem;
+    }
+
+    .becas__text h4 {
+        margin: 0 0 0 0;
+        font-size: 6rem;
+    }
+
+    .becas__text p {
+        margin: 2rem 0 2rem 1rem;
+    }
+    
+    .becas__text button {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .becas__container-img {
+        height: 60rem;
+        width: 30%;
+    }
+
+    .becas__img {
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .becas__container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .becas__card {
+        width: 45%;
+        height: 250px;
+        margin: 0 auto;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+
+    .becas__span-front {
+        hyphens: manual;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .becas__inner-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+
+    .becas__card-front, .becas__card-back  {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .becas__card-front {
+        background: gray;
+        display: flex;
+        align-items: center;
+        transform: rotateX(-180deg);
+        justify-content: center;
+    }
+
+    .becas__card-back-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .becas__span-back-adp {
+        background: rgb(128, 128, 128);
+        margin-top: -270px;
+        border: 2px solid #fff;
+    }
+
+    .becas__span-front, .becas__span-back {
+        color: #fff;
+        transition: transform 1s;
+    }
+
+    .becas__card-back {
+        background-image: url("../img/Logo_Rojo0000.png");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .becas__card:hover .becas__inner-box {
+        transform: rotateX(180deg);
+    }
+
+    .becas__card:hover > .becas__span-front, .becas__span-back {
+        transform: translateY(140px);
+
+    }
 
     .coders h2{
         font-size: 5rem;
@@ -1620,10 +1851,56 @@ body {
     .section-epz__bk-h5 {
         font-size: 4rem;
     }
+
+    .becas__card {
+        width: 25%;
+        height: 350px;
+    }
+
+    .becas__container-cards {
+        display: flex;
+        align-items: end;
+        height: auto;
+    }
+
+    .becas__container-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .becas__container-img {
+        width: 35%;
+    }
+
+    .becas__text {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .becas__text h4 {
+        font-size: 8rem;
+    }
+
+    .becas__text p {
+        font-size: 1.6rem;
+        margin: 5rem 0;
+    }
+
+    .becas__text button {
+        font-size: 1.4rem;
+        width: 25rem;
+        margin: 0 0;
+    }
+
     .coders h2{
         font-size: 7rem;
-        
     }
+
 
     .large{
         display: flex;
