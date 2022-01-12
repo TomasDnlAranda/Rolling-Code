@@ -391,6 +391,11 @@ body {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    transition: transform 2s, background 3s;
+}
+
+.section-epz__ui:hover {
+    background-position-x: 5rem;
 }
 
 .section-epz__bk {
@@ -400,6 +405,19 @@ body {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    transition: background 3s;
+}
+
+
+.section-epz__bk-hover {
+    display: flex;
+    justify-content: baseline;
+    height: 100%;
+    transition: background 2s;
+}
+
+.section-epz__bk-hover:hover {
+    background: rgba(87, 87, 87, 0.445);
 }
 
 .section-epz__bk-h5 {
@@ -429,9 +447,9 @@ body {
 .section-epz__bk-text {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: start;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 15rem;
     margin-top: 14rem;
     width: 60%;
 }
@@ -444,6 +462,26 @@ body {
     margin: 0 auto;
     margin-top: 11rem;
     width: 60%;
+}
+
+.section-epz__ui:hover > .section-epz__ui-hover > .section-epz__text > .section-epz__ui-h5 {
+    transform: scale(1.1)
+}
+
+.section-epz__bk:hover > .section-epz__bk-hover > .section-epz__bk-text > .section-epz__bk-h5 {
+    transform: scale(1.05)
+}
+
+
+.section-epz__ui-hover {
+    background: transparent;
+    height: 100%;
+    transition: background 2s;
+}
+
+
+.section-epz__ui-hover:hover {
+    background: rgba(87, 87, 87, 0.445);
 }
 
 .coders{
@@ -729,6 +767,30 @@ body {
 .section-un__img {
     width: 100%;
     height: auto;
+    transition: transform 1.5s, filter 1.5s;
+    visibility: visible;
+}
+
+.section-un__card-1:hover > .section-un__container-card-1 > img {
+    opacity: 1.5;
+    transform: scale(1.2);
+    overflow: hidden;
+    filter: brightness(60%);
+}
+
+.section-un__card-2:hover > .section-un__container-card-2 > img {
+    opacity: 1.5;
+    transform: scale(1.2);
+    overflow: hidden;
+    filter: brightness(60%);
+}
+
+.section-un__container-card-1 {
+    overflow: hidden;
+}
+
+.section-un__container-card-2 {
+    overflow: hidden;
 }
 
 .section-un__card-text {
@@ -741,6 +803,7 @@ body {
 }
 
 .section-un__card-1 {
+    overflow: hidden;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     background: #fff;
@@ -755,6 +818,7 @@ body {
     background: #fff;
     margin: 1rem 1rem 0;
     box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.575);
+    overflow: hidden;
 
 }
 
@@ -1121,7 +1185,7 @@ body {
         font-size: 2.5rem;
         margin-top: 7rem;
     }
-
+    
     .section-epz__bk-h5 {
         font-size: 2.5rem;
         margin-top: 7rem;
