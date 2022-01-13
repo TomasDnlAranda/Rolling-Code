@@ -208,6 +208,7 @@ body {
     font-size: 1rem;
     margin: 1rem 0 2rem 0;
     transition: background .5s;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -589,6 +590,7 @@ body {
     margin-top: 3.5rem;
     margin-left: 3rem !important;
     width: 17rem;
+    cursor: pointer;
 }
 
 .becas__container-cards {
@@ -920,7 +922,7 @@ body {
     background: #fff;
     margin: 0 1rem;
     box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.575);
-
+    cursor: pointer;
 }
 
 .section-un__card-2 {
@@ -930,7 +932,7 @@ body {
     margin: 1rem 1rem 0;
     box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.575);
     overflow: hidden;
-
+    cursor: pointer;
 }
 
 .section-un__card-text p {
@@ -1352,6 +1354,30 @@ body {
         font-size: 2.5rem;
         margin-top: 7rem;
     }
+
+    .section-epz__ui-hover {
+        background: transparent;
+        height: 100%;
+        transition: background 2s;
+    }
+    
+    
+    .section-epz__ui-hover:hover {
+        background: rgba(87, 87, 87, 0.445);
+    }
+
+    .section-epz__bk-hover {
+        display: flex;
+        justify-content: baseline;
+        height: 100vh;
+        transition: background 2s;
+    }
+    
+    .section-epz__bk-hover:hover {
+        background: rgba(87, 87, 87, 0.445);
+    }
+    
+    
     
     .becas__container {
         display: flex;
@@ -1422,8 +1448,12 @@ body {
         cursor: pointer;
         text-align: center;
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: 1.3rem;
         color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     
     .becas__inner-box {
@@ -1444,11 +1474,14 @@ body {
     }
 
     .becas__card-front {
-        background: gray;
+        background-image: url("../img/Logo_Rojo0000.png");
         display: flex;
         align-items: center;
         transform: rotateX(-180deg);
         justify-content: center;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
     }
 
     .becas__card-back-flex {
@@ -1459,8 +1492,8 @@ body {
 
     .becas__span-back-adp {
         background: rgb(128, 128, 128);
-        margin-top: -270px;
         border: 2px solid #fff;
+        padding: 1rem .5rem;
     }
 
     .becas__span-front, .becas__span-back {
@@ -1479,9 +1512,8 @@ body {
         transform: rotateX(180deg);
     }
 
-    .becas__card:hover > .becas__span-front, .becas__span-back {
+    .becas__card:hover > span {
         transform: translateY(140px);
-
     }
 
     .coders h2{
