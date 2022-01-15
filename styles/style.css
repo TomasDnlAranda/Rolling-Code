@@ -861,22 +861,30 @@ body {
 }
 
 .section-un {
-    background: linear-gradient(0deg, rgba(193,0,0,1) 70%, rgba(255,255,255,1) 70%);
+    /*background: linear-gradient(0deg, rgba(193,0,0,1) 70%, rgba(255,255,255,1) 70%);*/
     padding-bottom: 2rem;
     padding-top: 2rem;
+    position: relative;
 }
 
 .section-un__h3 {
+    color: transparent;
+    -webkit-text-stroke: 1.2px #666666;
     font-size: 3rem;
     font-weight: 600;
     font-family: "Integral", Sans-serif;
-    color: rgba(193,0,0,1);
     line-height: .9;
     width: max-content;
     margin-left: 1rem;
     margin-top: 0;
+    margin-bottom: 2rem;
 }
 
+.section-un__dots{
+    position: absolute;
+    height: 5rem;
+    left: 3rem;
+}
 .section-un__img {
     width: 100%;
     height: auto;
@@ -993,6 +1001,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+.section-un__background{
+    position: absolute;
+    background-color: #C10000;
+    min-width: 100%;
+    min-height: 30%;
+    z-index: -99999;
+    bottom: 2rem;
+}
 
 .section-pry {
     background: #f3f3f3;
@@ -1107,10 +1123,11 @@ body {
 
 @media all and (min-width: 555px) {
     .section-un__h3 {
+        color: transparent;
+        -webkit-text-stroke: 1.2px #666666;
         font-size: 5rem;
         font-weight: 600;
         font-family: "Integral", Sans-serif;
-        color: rgba(193,0,0,1);
         line-height: .9;
         padding-top: 2rem;
         margin-left: 1rem;
@@ -1439,6 +1456,7 @@ body {
         width: 45%;
         height: 250px;
         margin: 0 auto;
+        margin-bottom: 2rem;
         perspective: 1000px;
         cursor: pointer;
     }
@@ -1448,7 +1466,8 @@ body {
         cursor: pointer;
         text-align: center;
         box-sizing: border-box;
-        font-size: 1.3rem;
+        font-size: small;
+        font-weight: bold;
         color: #fff;
         display: flex;
         justify-content: center;
@@ -1585,13 +1604,23 @@ body {
     }
 
     .section-un__h3 {
+        color: transparent;
+        -webkit-text-stroke: 1.2px #666666;
         font-size: 5.5rem;
         font-weight: 600;
         font-family: "Integral", Sans-serif;
-        color: rgba(193,0,0,1);
         line-height: .9;
         padding-left: 1rem;
         padding-top: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .section-un__dots{
+        position: absolute;
+        z-index: 10000;
+        left: 5rem;
+        top: 5rem;
+        height: 9rem;
     }
 
     .section-un__cards-container {
@@ -1665,6 +1694,14 @@ body {
         width: 100%;
     }
 
+    .becas__container-text button{
+        margin-bottom: 0;
+    }
+
+    .becas__container-cards{
+        max-height: 60rem;
+        margin-bottom: 2rem;
+    }
 
 }
 
@@ -2008,14 +2045,17 @@ body {
         line-height: 0.9;
     }
 
+
     .section-un__h3 {
+        color: transparent;
+        -webkit-text-stroke: 1.2px #666666;
         font-size: 7rem;
         font-weight: 600;
         font-family: "Integral", Sans-serif;
-        color: rgba(193,0,0,1);
         line-height: .9;
         padding-left: 1rem;
         padding-top: 2.5rem;
+        margin-left: 2rem;
     }
 
     .section-un__cards-container {
@@ -2030,6 +2070,15 @@ body {
     .section-un__card-2 {
         width: 35rem;
     }
+
+    .section-un__dots{
+        position: absolute;
+        z-index: 10000;
+        left: 5rem;
+        top: 6rem;
+        height: 11rem;
+    }
+
 }
 
 
