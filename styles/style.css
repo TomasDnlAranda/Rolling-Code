@@ -517,15 +517,15 @@ body {
     color: var(--ast-global-color-3);
     hyphens: manual;
     box-sizing: border-box;
-    min-height: 1px;
     position: relative;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     align-self: inherit;
     cursor: default;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -546,7 +546,7 @@ body {
     font-size: 65px;
     line-height: 0.9;
     margin-top: 5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .becas__text p {
@@ -564,8 +564,10 @@ body {
     vertical-align: baseline;
     margin-bottom: 1.75em;
     box-sizing: border-box;
-    margin-top: 2rem;
-    padding-left: 2rem;
+    margin-top: .5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: start;
 }
 
 .becas__text button {
@@ -587,15 +589,110 @@ body {
     background-color: #C10000;
     border-radius: 50px 50px 50px 50px;
     margin-bottom: 2rem;
-    margin-top: 3.5rem;
-    margin-left: 3rem !important;
-    width: 17rem;
+    margin-top: 5rem;
     cursor: pointer;
 }
 
 .becas__container-cards {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
 }
+
+.becas__card {
+    width: 50%;
+    height: 300px;
+}
+
+.becas__container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.becas__card {
+    width: 50%;
+    height: 250px;
+    margin: 0;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.becas__span-front {
+    hyphens: manual;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: small;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.becas__inner-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.becas__card-front, .becas__card-back  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.becas__card-front {
+    background-image: url("../img/Logo_Rojo0000.png");
+    display: flex;
+    align-items: center;
+    transform: rotateX(-180deg);
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.becas__card-back-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.becas__span-back-adp {
+    background: rgb(128, 128, 128);
+    border: 2px solid #fff;
+    padding: 1rem .5rem;
+}
+
+.becas__span-front, .becas__span-back {
+    color: #fff;
+    transition: transform 1s;
+}
+
+.becas__card-back {
+    background-image: url("../img/Logo_Rojo0000.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.becas__card:hover .becas__inner-box {
+    transform: rotateX(180deg);
+}
+
+.becas__card:hover > span {
+    transform: translateY(140px);
+}
+
 
 .coders{
     background-color: #f3f3f3;
@@ -1000,6 +1097,7 @@ body {
 .section-un__cards-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 .section-un__background{
     position: absolute;
@@ -1450,6 +1548,7 @@ body {
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
+        margin-top: 4rem;
     }
 
     .becas__card {
@@ -1923,13 +2022,15 @@ body {
 
     .becas__card {
         width: 25%;
-        height: 350px;
+        height: 400px;
+        margin: 0;
     }
 
     .becas__container-cards {
         display: flex;
         align-items: end;
-        height: auto;
+        height: 100%;
+        margin: 0;
     }
 
     .becas__container-text {
