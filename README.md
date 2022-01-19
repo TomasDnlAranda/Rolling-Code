@@ -7,7 +7,7 @@ _his interface was achieved by:_
 - CSS
 - JS
 - FLEXBOX
-- TAIWLIND CSS
+- KEY FRAMES
 - RESPONSIVE DESIGN 100%
  
 _to be able to visualize the project in a better way:_
