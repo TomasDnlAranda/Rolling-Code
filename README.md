@@ -9,6 +9,7 @@ _his interface was achieved by:_
 - FLEXBOX
 - KEY FRAMES
 - RESPONSIVE DESIGN 100%
+- METODOLOGIA BEM
  
 _to be able to visualize the project in a better way:_
 
