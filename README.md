@@ -13,7 +13,7 @@ _his interface was achieved by:_
  
 _to be able to visualize the project in a better way:_
 
-https://tomasdnlaranda.github.io/Rolling-Code---Proyecto/
+https://tomasdnlaranda.github.io/Rolling-Code-Project/
 
 _the interface of our course:_
 
